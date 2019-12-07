@@ -43,3 +43,10 @@ const a1 = 2;
 let b1 = 2;
 
 console.log('--------End--------')
+
+const a = 2;
+const b = 5;
+
+x = a+b;
+console.log(x)
+
