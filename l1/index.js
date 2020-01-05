@@ -50,3 +50,17 @@ const b = 5;
 x = a+b;
 console.log(x)
 
+function displayResalt() {
+    let lengh = document.getElementById('lengh').value;
+    let width = document.getElementById('width').value;
+    let height = document.getElementById('height').value;
+document.getElementById('resalt').innerHTML = lengh * width * height;
+}
+
+let  year = prompt("який зараз рік",'');
+
+if (year == 2020) { alert("правильно");
+}
+else {
+alert('nan')
+}
