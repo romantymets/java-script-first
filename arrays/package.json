@@ -6,7 +6,7 @@
   "dependencies": {},
   "devDependencies": {},
   "scripts": {
-    "start": "nodemon arrays-vova.js"
+    "start": "nodemon arrays.js"
   },
   "author": "",
   "license": "ISC"
