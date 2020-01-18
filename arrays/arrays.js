@@ -1,6 +1,7 @@
 const {  anyArray, tags, numberArrays, news  } = require('./data');
 
 // 1:  вивести всіх новини за допомогою for
+const array = [];
 // 2:  вивести всіх новини за допомогою forEach
 // 3:  замапити новини за допомогою map (додати нове поле tag === із масиву tags)
 // 4:  використати joint
