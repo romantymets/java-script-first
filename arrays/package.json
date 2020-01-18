@@ -1,0 +1,13 @@
+{
+  "name": "arrays",
+  "version": "1.0.0",
+  "description": "> npm run start",
+  "main": "arrays-vova.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon arrays-vova.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
