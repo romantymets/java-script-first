@@ -22,3 +22,23 @@ news.forEach((singleNew, index) => {
 numberArrays.forEach((value, ) => {
   console.log(`array numbers`,value)
 })
+console.log('--------3---------')
+const mapper = function (tag, index) {
+  return index === 0 ? 'dsgsdgsd':'dddfzxvzx';
+};
+const mapedtags = tags.map(mapper);
+console.log(mapedtags)
+
+console.log('----5-----')
+const mapedNews = news.map((singleNew, index ) => {
+  // singleNew.tag = tags[index]
+  if (index %2 === 0) {
+    singleNew.tag = tags[index]
+  }else {
+    singleNew.tag = 'first';
+    delete singleNew.description;
+  }
+  return singleNew;
+
+})
+console.log(mapedNews)
