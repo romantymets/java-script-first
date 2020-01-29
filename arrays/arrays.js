@@ -42,3 +42,28 @@ const mapedNews = news.map((singleNew, index ) => {
 
 })
 console.log(mapedNews)
+
+console.log('-------6---------')
+const k = numberArrays.join('_')
+for(let k = 0; k < numberArrays.length; k++){
+  console.log(`------ = ${k} =${numberArrays[k]}`)
+}
+
+// numberArrays.forEach((value, index) => {
+//   console.log(`-----number ${index} = ${value}`)
+// })
+
+
+console.log('Filter------------------')
+
+const N = 2;
+function filtredArr(number){
+return number % N ;
+}
+const gh = numberArrays.filter(filtredArr);
+
+console.log(gh);
+
+
+
+
