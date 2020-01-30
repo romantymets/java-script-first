@@ -2,11 +2,11 @@
   "name": "arrays",
   "version": "1.0.0",
   "description": "> npm run start",
-  "main": "arrays-vova.js",
+  "main": "functions.js",
   "dependencies": {},
   "devDependencies": {},
   "scripts": {
-    "start": "nodemon arrays.js"
+    "start": "nodemon functions.js"
   },
   "author": "",
   "license": "ISC"
