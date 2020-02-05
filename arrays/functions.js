@@ -31,4 +31,45 @@ const myArr = {
 const lstres = myArr.map(56, 23);
 const name = 'vasy';
 const user = { name };
-console.log({ lstres })
+console.log( {lstres} )
+
+
+
+const operator = ( a , b) => {
+
+  console.log({a , b});
+  if (a > b){
+    console.log("LOL")
+  }
+  else {
+    loger('PISun')
+  }
+};
+
+
+operator( 'Oleg', 'Roman');
+function loger (str){
+  console.log({str});
+  return str;
+}
+
+function chckAge(age) {
+  return(age > 18) ? true: console.log("PISOV v DYpY");
+}
+
+console.log(chckAge(21))
+function checkAge1(age1) {
+  return(age1 > 18) || console.log("PISOV v DYpY1");
+}
+console.log(checkAge1( 17));
+
+
+function checkcalcul(x , n) {
+  let resylt = x;
+  for(let i = 1; i < n; i++){
+resylt *= x;
+  }
+return resylt
+}
+
+console.log(checkcalcul(5, 2))
