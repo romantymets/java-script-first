@@ -40,9 +40,11 @@ user1.logLastName();
 
 function logAge() {
   // her use this
+  console.log('Haw old are you -- ', this.age)
 }
 function logName() {
   // her use this
+  console.log('whot is your name--- ', this.name)
 }
 
 const student1 = {
@@ -65,3 +67,22 @@ const student2 = {
 // викличи student1.newLogName = student1.newLogName.bind(student2) and student1.newLogName()
 
 // те саме для logAge
+console.log("-------1-------");
+logName()
+console.log("-------2-------");
+student1.logName()
+student1.logAge.apply(student2)
+console.log("-------3-------");
+student2.logName()
+student2.logName.apply(student1)
+// student1.newLogName = student1.newLogName.bind(student2);
+// student1.newLogName()
+console.log("-------4-------");
+const NewLogName = logName.bind(student2)
+NewLogName()
+console.log("-------5-------");
+logAge.call({age:25});
+
+const New = logName.bind({name: 'Vasul'});
+New()
+student2.logAge.call(student1)
