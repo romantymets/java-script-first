@@ -86,3 +86,33 @@ logAge.call({age:25});
 const New = logName.bind({name: 'Vasul'});
 New()
 student2.logAge.call(student1)
+console.log("-------6-------");
+console.log("age" in student1);
+for ( let key in student1) {
+  console.log(student1[key], "-----", key);
+}
+let sallary = {
+  oleg: 600,
+  Vasa: 800,
+  Peta: 200
+}
+console.log("-------6-------");
+for(let newsalary in sallary){
+  console.log("New salary", newsalary, sallary[newsalary] * 2)
+}
+
+console.log("-------7-------");
+const sallary1 = {
+  oleg: 600,
+  Vasa: 800,
+  sallaryOleg: sallaryOleg,
+  sallaryVasa: sallaryVasa
+}
+function  sallaryOleg () {
+  console.log("Oleg", this.oleg);
+}
+function  sallaryVasa () {
+  console.log("Vasa", this.Vasa);
+}
+sallary1.sallaryOleg()
+sallary1.sallaryVasa()
