@@ -116,3 +116,22 @@ function  sallaryVasa () {
 }
 sallary1.sallaryOleg()
 sallary1.sallaryVasa()
+
+
+console.log("-------Proto____");
+const person = new Object({
+  name: 'Roman',
+  age: 27,
+  say: function () {
+    console.log("hi");
+  }
+  });
+Object.prototype.sayHelo = function(){
+  console.log("helo");
+}
+const lena = Object.create(person)
+console.log(person.name)
+person.sayHelo()
+lena.age = 12;
+lena.name = "lena"
+console.log(lena.age,lena.name);
