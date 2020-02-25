@@ -135,3 +135,23 @@ person.sayHelo()
 lena.age = 12;
 lena.name = "lena"
 console.log(lena.age,lena.name);
+
+const people = {
+  name: "Olga",
+   age: 45,
+  logInfo: function (job, phone) {
+    console.group(`${this.name} info:`);
+    console.log(`Name is ${this.name}`);
+    console.log(`Age is ${this.age}`);
+    console.log(`Job is ${job}`);
+    console.log(`Phone is ${phone}`);
+    console.groupEnd()
+  }
+}
+
+const Vasyl ={
+  name: "Vasyl",
+   age: 16
+}
+
+people.logInfo.bind(Vasyl)('pianist', 0985870008)
