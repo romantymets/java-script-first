@@ -4,7 +4,7 @@
   "description": "",
   "main": "scope.js",
   "scripts": {
-    "start": "nodemon ./scope.js"
+    "start": "nodemon ./zamukania.js"
   },
   "author": "",
   "license": "ISC"
