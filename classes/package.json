@@ -1,0 +1,11 @@
+{
+  "name": "functions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scope.js",
+  "scripts": {
+    "start": "nodemon ./classes.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
