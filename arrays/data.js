@@ -1,6 +1,6 @@
 // numbers            0  1  2
 // numberArrays[90]
-const numberArrays = [1, 2, 3, 4,58 ,35, 9, 57];
+const numberArrays = [1, 2, 3, 4, 58 ,35, 9, 57];
 // strings
 const tags = ['engenire', 'developer'];
 // objects
