@@ -1,0 +1,11 @@
+{
+  "name": "functions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scope.js",
+  "scripts": {
+    "start": "nodemon ./zamukania.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
