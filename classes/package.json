@@ -4,7 +4,7 @@
   "description": "",
   "main": "scope.js",
   "scripts": {
-    "start": "nodemon ./classes.js"
+    "start": "nodemon ./classes-home.js"
   },
   "author": "",
   "license": "ISC"
