@@ -13,7 +13,7 @@
  *  Створити 1 статичний мтод
  *  Створити гетер сетер
  * */
-
+/**
 class Telephone {
   constructor(brend) {
     this.brend = brend;
@@ -36,14 +36,87 @@ const samsung = new Telephone('Samsung');
 console.log(samsung.present('Samsung'));
 console.log(samsung.operationSystem('Android'));
 
-const iphone = new Telephone('Iphone');
-console.log(iphone.present('Iphone'));
-console.log(iphone.operationSystem('IOS'));
+const ios = new Telephone('Iphone');
+console.log(ios.present('Iphone'));
+console.log(ios.operationSystem('IOS'));
 
 
 class Iphone extends Telephone {
   constructor(brend){
     super(brend)
   }
+applestore = true;
+
+  get showstore() {
+    console.log('i am ifon:', );
+    return this.applestore;
+  }
+  set showstore(w) {
+    console.log('i am settin wight now:', w);
+    if(w !== true) {
+      this.applestor = w;
+    }
+  }
+}
+
+console.log('-----------1--------------')
+const iphone = new Iphone('Iphone');
+iphone.present()
+iphone.operationSystem('notAndroid')
+**/
+class Animal {
+  static type = 'Animal';
+  constructor(option){
+this.name = option.name;
+    this.age = option.age;
+    this.color = option.color;
+    this.hastail = option.hastail;
+    this.size = option.size;
+  }
+
+
+  sayhelo(){
+    consol.log('Helo')
+  }
+  voise (){
+    console.log("I am Animal:",this.name)
+  }
+}
+const zebra = new Animal({
+  name: 'Zebra',
+  age: 7,
+  color: 'white',
+  hastail: true,
+  size: 'small'
+});
+zebra.voise()
+console.log(Animal.type);
+
+console.log(zebra);
+
+class Cat extends Animal{
+  static type = 'Cat'
+  constructor(options){
+    super(options);
+    this.wool = options.wool;
+  }
+
+  voise (){
+    console.log("I am Animal:",this.name)
+  }
+
 
 }
+
+const cat = new Cat({
+  name: 'Cat',
+  age: 7,
+  color: 'blac',
+  hastail: true,
+  size: 'small',
+  wool: 'bald'
+});
+
+console.log(Cat.type);
+console.log(cat)
+cat.voise()
